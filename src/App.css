@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.frame {
+  background-color: #081231;
+  color: #ffffff;
+  width: 296px;
+  height: 500px;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5), -2px -1px 2px 0 rgba(255, 255, 255, 0.1);
+}
+
+.display-container {
+  background-color: #010511;
+  color: #ffffff;
+  height: 85px;
+  width: 93%;
+  text-align: right;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.display-container p {
+  padding: 2px 15px;
+  margin-bottom: -12px;
+  letter-spacing: 1px;
+}
+
+.display-container :nth-child(1) {
+  padding-top: 10px;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.display-container :nth-child(2) {
+  font-size: 24px;
+  padding-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.buttons-container {
+  height: 395px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.center {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.height_118 {
+  height: 118px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.column button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #081231;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5), -2px -1px 2px 0 rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 0;
+  font-family: "Quicksand", sans-serif;
+  height: 44.98px;
+  width: 44.98px;
+  outline: none;
+  border-radius: 15px;
+  padding: 17px;
+  font-size: 20px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.column button:active {
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.5), -1px -1px 1px 0 rgba(255, 255, 255, 0.1);
 }
